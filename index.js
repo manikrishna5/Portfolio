@@ -1,5 +1,5 @@
 function viewResume() {
-    window.open("C:\\Users\\Mani Krishna Karri\\Downloads\\Portfolio\\Mani_Krishna_Karri_Resume.pdf",'_blank')
+    window.open("Mani_Krishna_Karri_Resume.pdf",'_blank')
 }
 
 document.addEventListener("DOMContentLoaded", () => {
