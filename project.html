@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="project.css" rel="stylesheet">
+    <title>Projects</title>
+</head>
+<body style="background-color: #1a1a1a;color: white;">
+     <nav class="navbar navbar-expand-lg bg-dark navbar-dark border-bottom border-body">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mani Krishna</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--Padding ivvali ikkada-->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#certifications">Certifications</a>
+          </li>
+          
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Connect with Me
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/manikrishna-karri/" target="_blank">LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://github.com/manikrishna5" target="_blank">GitHub</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="mailto:manikrishnakarri@gmail.com">E-Mail</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button class="btn btn-outline-light" type="button" onclick="viewResume()">Resume</button>
+      </div>
+    </div>
+  </nav>
+  <div class="projects-container">
+        <div class="projectitle">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Explore my work across different domains and technologies</p>
+        </div>
+        <div class="filter-buttons">
+            <button class="filter-btn" data-filter="ml-ds">
+                <span class="category-icon">🤖</span>Machine Learning & DS
+            </button>
+            <button class="filter-btn" data-filter="fullstack">
+                <span class="category-icon">💻</span>Full Stack Development
+            </button>
+            <button class="filter-btn" data-filter="graphics">
+                <span class="category-icon">🎨</span>Graphic Designing
+            </button>
+            <button class="filter-btn" data-filter="programming">
+                <span class="category-icon">⚡</span>Python & Java
+            </button>
+        </div>
+  </div>
+  <div class="projects-grid" id="projectsGrid">
+
+    <div class="project-card" data-category="ml-ds">
+            <div class="project-icon">🤖</div>
+            <h3 class="project-title">House Price Prediction</h3>
+            <p class="project-description">Developed a robust house price prediction model utilizing Random Forest Regressor. This ensemble learning approach achieved a high 93% prediction accuracy (R-squared), demonstrating strong performance in forecasting property values based on various features.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Scikit-learn</span>
+                <span class="tech-tag">Pandas</span>
+                <span class="tech-tag">Plotly</span>
+                <span class="tech-tag">Random Forest</span>
+                <span class="tech-tag">Streamlit</span>
+            </div>
+            <div class="project-links">
+                <a href=" https://house-prediction-app-by-manikrishna-mcppgbjamkutm6spokfx8x.streamlit.app/
+ " class="project-link">View Demo</a>
+                <a href="https://github.com/manikrishna5/House-Prediction-App-by-MLRandomforest" class="project-link">GitHub</a>
+            </div>
+    </div>
+    <div class="project-card" data-category="ml-ds">
+        <div class="project-icon">🤖</div>
+        <h3 class="project-title">Student Performance Predictor</h3>
+        <p class="project-description">Built a student performance predictor using linear regression, a foundational machine learning algorithm. This model effectively forecasts student outcomes, achieving an accuracy of 88% and providing early insights to support timely interventions</p>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Plotly</span>
+            <span class="tech-tag">Linear Regression</span>
+            <span class="tech-tag">Streamlit</span>
+        </div>
+        <div class="project-links">
+            <a href="https://student-performance-appgit-eftszucys484qzovkchdvb.streamlit.app/ " class="project-link">View Demo</a>
+            <a href="https://github.com/manikrishna5/student-performance-app" class="project-link">GitHub</a>
+        </div>
+    </div>
+    <div class="project-card" data-category="ml-ds">
+        <div class="project-icon">🤖</div>
+        <h3 class="project-title">Loan Approval Prediction</h3>
+        <p class="project-description">Developed a robust Loan Approval Prediction model utilizing Random Forest Classifier. This machine learning solution achieved an 86% accuracy in predicting loan approval outcomes, enabling financial institutions to make more informed and efficient lending decisions.</p>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Plotly</span>
+            <span class="tech-tag">Random Forest Classifier</span>
+            <span class="tech-tag">Streamlit</span>
+        </div>
+        <div class="project-links">
+            <a href= "https://av3utkeefk7nnf9rxzbepm.streamlit.app/ " class="project-link">View Demo</a>
+            <a href="https://github.com/manikrishna5/Loan-Prediction-" class="project-link">GitHub</a>
+        </div>
+    </div>
+    <div class="project-card" data-category="ml-ds">
+        <div class="project-icon">🤖</div>
+        <h3 class="project-title">Email Spam Classification</h3>
+        <p class="project-description">Developed a Spam/Ham Classification model using Logistic Regression, a fundamental machine learning algorithm. This model effectively distinguishes between legitimate (ham) and unsolicited (spam) messages, demonstrating a foundational understanding of text classification techniques</p>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">Logistic Regression</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">Flask</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/manikrishna5/Spam-Detection" class="project-link">GitHub</a>
+        </div>
+    </div>
+    <div class="project-card" data-category="ml-ds">
+        <div class="project-icon">🤖</div>
+        <h3 class="project-title">PDF Parser</h3>
+        <p class="project-description">Developed a PDF Parser during the KMIT Hackathon, collaborating with a team of four. This project focused on extracting structured information from PDF documents, demonstrating practical application of data extraction techniques in a competitive environment.</p>
+        <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">Pandas</span>
+            <span class="tech-tag">pypdf</span>
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">Flask</span>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/Recurse-Official/G44" class="project-link">GitHub</a>
+        </div>
+    </div>
+    <div class="project-card" data-category="graphics">
+        <!-- Posters Section -->
+        <div class="section">
+            <h2 class="section-title">Posters</h2>
+            <div class="projects-scroll posters">
+                <div class="project-item">
+                    <img src="Graphicdesign/Posters/flyer.png" alt="T20 Service" class="project-image">
+                    <div class="project-overlay" id="1">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/Posters/backend.png" alt="Summer Bootcamp" class="project-image">
+                    <div class="project-overlay" id="2">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/Posters/icegola.png" alt="Ice Gola" class="project-image">
+                    <div class="project-overlay" id="3">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/Posters/hashitout_poster_FwQR.png" alt="Hash-It-Out" class="project-image">
+                    <div class="project-overlay" id="4">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/Posters/SDC .jpg" alt="SDC" class="project-image">
+                    <div class="project-overlay" id="5">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/Posters/skylit.png" alt="Skylit" class="project-image">
+                    <div class="project-overlay" id="6">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/invitations/skylit.png" alt="Skylit" class="project-image">
+                    <div class="project-overlay" id="7">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/invitations/Invitation.jpg" alt="Backend" class="project-image">
+                    <div class="project-overlay" id="8">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/stories/shivarathri.jpg" alt="Shivaratri" class="project-image">
+                    <div class="project-overlay" id="9">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/stories/Dasara SDC.jpg" alt="Dasara" class="project-image">
+                    <div class="project-overlay" id="10">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/stories/ramnavami.jpg" alt="Workshop Poster" class="project-image">
+                    <div class="project-overlay" id="11">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/stories/ugadi.jpg" alt="ugadi" class="project-image">
+                    <div class="project-overlay" id="12">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/invitations/farewell invite.png" alt="farewell" class="project-image">
+                    <div class="project-overlay" id="13">View Project</div>
+                </div>
+            </div>
+            <div class="scroll-hint">← Scroll to see more →</div>
+        </div>
+        <!-- Instagram Section -->
+        <div class="section">
+            <h2 class="section-title">Instagram Posts</h2>
+            <div class="projects-scroll instaposts">
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/t20.jpg" alt="Instagram Brand Post" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/kodefast2.jpg" alt="Kodefast" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/Reg Open.jpg" alt="SDC" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/Chandrasekhar.png" alt="chandu" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/alephzero.jpg" alt="alephzero" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/kodefast.png" alt="kf" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/kodefast3.jpg" alt="kodefast" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/spark marketing.jpg" alt="spark" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/earth day.png" alt="earthday" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/Eid-Al-Adha.png" alt="eid" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/OUR INCREDIBLE GUESTS.png" alt="oig" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/World Environment Day Instagram Post.jpg" alt="envi" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/mayday.jpg" alt="mayday" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/spark.jpg" alt="spark" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/winners!.jpg" alt="winners" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/Mothers Day.jpg" alt="mothers" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/Special Sponsor1.png" alt="special" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/National service day.png" alt="service" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/instaposts/heat.png" alt="heat" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+            </div>
+            <div class="scroll-hint">← Scroll to see more →</div>
+        </div>
+        <!-- Presentations Section -->
+        <div class="section">
+            <h2 class="section-title">Presentations&Certificates</h2>
+            <div class="projects-scroll presentations">
+                <div class="project-item">
+                    <img src="Graphicdesign/Certificates/Canva 500 Design Milestone Badge.jpg" alt="Portfolio Presentation" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/presentations_brochures/Roadmap python.png" alt="Roadmap" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/presentations_brochures/food.png" alt="HIT-Brochure" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/Certificates/hashitoutcer.png" alt="HIT-cer" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/presentations_brochures/uxplosion.png" alt="uxplosion" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/Certificates/cer1.png" alt="sdc1" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/Certificates/cer2.png" alt="sdc2" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/presentations_brochures/sdc.png" alt="sdc" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+                <div class="project-item">
+                    <img src="Graphicdesign/Certificates/cer3.png" alt="sdc3" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/Certificates/demosdc.png" alt="sdccer" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+            </div>
+            <div class="scroll-hint">← Scroll to see more →</div>
+        </div>
+        <!-- Banners Section -->
+        <div class="section">
+            <h2 class="section-title">Banners & Magazines</h2>
+            <div class="projects-scroll banners">
+                <div class="project-item">
+                    <img src="Graphicdesign/Banners/horizon.png" alt="Horizon Banner" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+                <div class="project-item">
+                    <img src="Graphicdesign/Banners/PRESENTS (37.671 x 72 in).png" alt="UX Banner" class="project-image">
+                    <div class="project-overlay">View Project</div>
+                </div>
+
+            </div>
+            <div class="scroll-hint">← Scroll to see more →</div>
+        </div>
+    </div>
+  </div>
+  <script src="project.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

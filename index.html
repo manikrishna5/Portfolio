@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="index.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <title>Mani Krishna Karri</title>
+</head>
+<body style="background-color: #1a1a1a;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark border-bottom border-body">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Mani Krishna</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--Padding ivvali ikkada-->
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="project.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#certifications">Certifications</a>
+          </li>
+          
+        
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Connect with Me
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/manikrishna-karri/" target="_blank">LinkedIn</a></li>
+              <li><a class="dropdown-item" href="https://github.com/manikrishna5" target="_blank">GitHub</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="mailto:manikrishnakarri@gmail.com">E-Mail</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button class="btn btn-outline-light" type="button" onclick="viewResume()">Resume</button>
+      </div>
+    </div>
+  </nav>
+  <div class="home" id="home">
+      <h1 class="Namemain">Mani Krishna Karri</h1>
+      <div class="role-line">
+        <span id="role"><!--Full Stack Developer | ML & Data Science Enthusiast | Graphic Designer--></span>
+        <span class="cursor"></span>
+      </div>
+      <div class = "homebutton">
+          <button class="btn btn-outline-light homeresume" id="resumebutton" type="button" onclick="viewResume()">Resume</button>
+          <button class="btn btn-outline-light homeproject" type="button">My Projects</button>
+      </div>
+  </div>
+  <div class="aboutme" id="aboutme">
+    <div class="about-header">
+      <h3 class="h3about">About Me</h3>
+    </div>
+    <div id="insideabout">
+      <img src="webimages/ChatGPT_Image_Jun_10__2025__05_23_44_PM-removebg-preview.png">
+      <p>
+            👋 Hi, I'm Mani Krishna<br>
+            I'm a Machine Learning Analyst with a strong passion for exploring data, building intelligent systems, and solving real-world problems through <span class="skill-highlight">AI and Deep Learning</span>. My technical toolkit includes <span class="skill-highlight">Python</span>, <span class="skill-highlight">Java</span>, and a solid grasp of <span class="skill-highlight">Machine Learning algorithms</span>, with growing expertise in <span class="skill-highlight">Deep Learning</span>, <span class="skill-highlight">Cloud Technologies</span>, and <span class="skill-highlight">Full Stack Development</span>.<br><br>
+
+            I've applied my skills in academic projects and hackathons, and currently serve as the Designing Head at SDC, where I've led <span class="skill-highlight">UI/UX bootcamps</span> and organized community-driven tech events. These experiences have not only sharpened my technical abilities but also honed my <span class="skill-highlight">leadership and collaboration skills</span>.<br><br>
+
+            I'm on a mission to continuously learn, build impactful projects, and prepare for challenging roles in tech—particularly in <span class="skill-highlight">Machine Learning</span>, <span class="skill-highlight">Cloud Engineering</span>, or as a <span class="skill-highlight">Full Stack Developer</span>. I believe in blending <span class="skill-highlight">analytical thinking</span> with <span class="skill-highlight">creative execution</span> to drive innovation that makes a difference.
+      </p>
+    </div>
+  </div>
+  <div class="skills" id="skills">
+    <div class="about-header">
+      <h3 class="h3about">What I Do?</h3>
+    </div>
+    <div class="outboxskill">
+      <div class="inboxskill">
+        <p>
+          <ul>
+            <li><p><span class="skill-highlight"> Machine Learning & Data Science</span>
+                  I excel at extracting insights from data and building predictive models. My skills cover the full data science pipeline, from cleaning and feature engineering to model deployment. I'm proficient in Python (Pandas, NumPy, Scikit-learn, TensorFlow, Keras), and SQL, with expertise in NLP, computer vision, MediaPipe. I use Jupyter Notebook, Spyder for analysis and visualization.</p>
+            </li>
+            <li><p><span class="skill-highlight"> Full Stack Development</span>
+                I build and deploy complete web applications, proficient in both front-end and back-end technologies. My front-end skills include HTML5, CSS3 (Bootstrap, Tailwind CSS), and JavaScript (React.js, Next.js). On the back end, I use Node.js (Express.js) and Python (Django, Flask). I manage databases with SQL (PostgreSQL, MySQL) and NoSQL (MongoDB), and leverage Git/GitHub for version control, deploying apps on Vercel, Netlify, and Heroku.</p>
+            </li>
+            <li><p><span class="skill-highlight"> Graphic Design</span>
+                With a strong eye for design, I create impactful visuals that enhance brand identity. I'm skilled in Canva, Adobe Photoshop,and Figma, producing compelling designs for digital and print media, including posters, branding, and UI/UX mockups.</p>
+            </li>
+            <li><p><span class="skill-highlight"> Data Structures & Algorithms (DSA)</span>
+                  My robust foundation in DSA drives my problem-solving abilities. I'm adept at selecting optimal data structures and designing efficient algorithms. I consistently apply these principles to achieve optimal time and space complexity, actively practicing on platforms like LeetCode to sharpen my skills</p>
+            </li>
+          </ul>
+        </p>
+      </div>
+      <div class="inboxskill2">
+        <img class="techstack" src="webimages/techstack.png">
+        <img class="workskills" src="webimages/work.png">
+      </div>
+    </div>
+  </div>
+  <div class="certifications" id="certifications">
+    <div class="about-header">
+      <h3 class="h3about">Certifications</h3>
+    </div>
+    <div class="gridboxes">
+      <div class="box">
+        <img class="image" src="certifcations/great_learning_logo.jpg">
+        <div class="white-overlay">
+          <div class="overlay-text">
+            <h4>Frontend Development</h4>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="certifcations/1631333024279.jpg">
+        <div class="white-overlay">
+          <div class="overlay-text">
+            <h4>Python for Data Science</h4>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="certifcations/linkedin_logo.jpg">
+        <div class="white-overlay">
+          <div class="overlay-text">
+            <h4>Git Essential Training</h4>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="certifcations/codetantra.jpg">
+        <div class="white-overlay">
+          <div class="overlay-text">
+            <h4>problem-solving Through C</h4>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="certifcations/efset_logo.jpg">
+        <div class="white-overlay">
+          <div class="overlay-text">
+            <h4>English Language Profeciency</h4>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="certifcations/amazon_web_services_logo.jpg">
+        <div class="white-overlay">
+          <div class="overlay-text">
+            <h4>AWS Cloud Computing</h4>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <img class="image" src="certifcations/amazon_web_services_logo.jpg">
+        <div class="white-overlay">
+          <div class="overlay-text">
+            <h4>AWS Cloud Architecting</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Scripts -->
+   <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

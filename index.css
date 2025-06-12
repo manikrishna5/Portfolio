@@ -1,0 +1,627 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  transform: translateY(-10vh);
+  padding: 0 1rem; 
+}
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.Namemain {
+  font-size: 5em;
+  font-weight: bold;
+  text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.7), 
+        -1px -1px 2px rgba(0, 0, 0, 0.7),
+        1px -1px 2px rgba(0, 0, 0, 0.7), 
+        -1px 1px 2px rgba(0, 0, 0, 0.7); 
+}
+.role-line {
+      font-size: 1.5rem;
+      color: grey;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.6rem;
+    background-color: grey;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+    opacity: 0;
+    }
+}
+.homebutton {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* adds space between buttons */
+  margin: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff;
+  }
+  50% {
+    text-shadow: 0 0 6px #fff, 0 0 10px #fff;
+  }
+  100% {
+    text-shadow: 0 0 3px #fff, 0 0 5px #fff;
+  }
+}
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  transform: translateY(-10vh); /*Keep your transform*/
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  min-height: 100vh;
+}
+
+.h3about {
+  position: relative;
+  display: inline-block;
+  color: white; 
+  cursor: pointer;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.h3about::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #fff; 
+  transition: width 0.3s ease;
+}
+.h3about:hover::after {
+  width: 100%;
+}
+#insideabout {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  padding-top: 30px;
+  gap: 4rem; /* decreased from 6rem*/
+  width: 100%;
+}
+
+#insideabout img { 
+  width: 400px; /*initially 500px*/
+  height: auto; /*initially 30%*/
+  object-fit: cover; 
+  margin: 10px;
+  padding-left: 10px;
+  flex-shrink: 0;
+}
+
+#insideabout p {
+  padding-top: 20px;
+  font-size: 20px;
+  flex: 1; 
+  margin: 0;
+  line-height: 1.6;
+}
+.skill-highlight {
+            color: #a8c9f0; /* Nice blue color */
+            position: relative;
+            font-weight: 500;
+        }
+
+        .skill-highlight::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #60A5FA;
+            transition: width 0.3s ease;
+        }
+
+        .skill-highlight:hover::after {
+            width: 100%;
+        }
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  min-height: 100vh;
+}
+.inboxskill{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* max-width: 500px; */
+}
+.inboxskill ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.inboxskill li {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 3px solid #60A5FA;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+.inboxskill2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 500px;
+  gap: 2rem;
+  padding-top: 5rem;
+}
+.outboxskill{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  gap: 8rem; /*init 12 em*/
+  max-width: 1400px;
+  width: 100%;
+  align-items: flex-start;
+}
+.techstack, .workskills {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 500px;
+}
+.certifications{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  color: white;
+  /* padding-top: 20px; */
+}
+.box{
+  width: 15em;
+  height: 15em;
+  border-radius: 8%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.image{
+  width: 100%;
+  height:80%;
+  object-fit: cover;
+  display: block;
+}
+.white-overlay {
+  position: absolute; 
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  height: 20%; 
+  background-color: rgba(255, 255, 255, 0.9); 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  padding: 0.5em; 
+  box-sizing: border-box; 
+}
+.overlay-text h4 {
+  color: #333; 
+  font-size: 1.1em; 
+  margin-bottom: 0; 
+}
+.gridboxes{
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  justify-content: center;
+  gap: 5em; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+/* Responsive Design */
+
+/* Large Tablets and Small Desktops (1024px and below) */
+@media (max-width: 768px) {
+  
+  .Namemain {
+    font-size: 2.5em;
+  }
+  
+  
+  .role-line {
+    font-size: 1.1rem;
+  }
+  
+  
+  .homebutton {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  
+  .homebutton .btn {
+    width: 60%;
+    max-width: 180px;
+  }
+  
+  
+  #insideabout {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  
+  #insideabout img {
+    width: 200px;
+    padding-left: 0;
+  }
+  
+  
+  #insideabout p {
+    font-size: 16px;
+    padding-top: 0;
+  }
+  
+  
+  .outboxskill {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  
+  .h3about {
+    font-size: 1.8rem;
+  }
+  
+  
+  .gridboxes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+  }
+  
+  
+  .box {
+    width: 10em;
+    height: 10em;
+  }
+}
+
+/* Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+ 
+  .home {
+    padding: 0 0.5rem;
+    height: 90vh;
+    transform: translateY(-5vh);
+  }
+  
+  
+  .Namemain {
+    font-size: 1.8em;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .role-line {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+ 
+  .cursor {
+    height: 1rem;
+    width: 8px;
+  }
+  
+  
+  .homebutton {
+    width: 100%;
+    gap: 10px;
+  }
+  
+  
+  .homebutton .btn {
+    width: 70%;
+    max-width: 150px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  
+  #insideabout {
+    gap: 1rem;
+    padding-top: 15px;
+  }
+  
+  
+  #insideabout img {
+    width: 150px;
+    margin: 5px;
+  }
+  
+  
+  #insideabout p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  
+  .outboxskill {
+    font-size: 14px;
+    gap: 2rem;
+  }
+  
+  
+  .inboxskill li {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 14px;
+  }
+  
+  
+  .h3about {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .aboutme, .skills {
+    padding: 0 0.5rem;
+    transform: translateY(-5vh);
+  }
+  
+  
+  .certifications {
+    padding: 1.5rem 0.5rem;
+  }
+  
+ 
+  .gridboxes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+    max-width: 100%;
+  }
+  
+  
+  .box {
+    width: 8em;
+    height: 8em;
+  }
+  
+  
+  .overlay-text h4 {
+    font-size: 0.75em;
+    line-height: 1.2;
+  }
+  
+  
+  .techstack, .workskills {
+    max-width: 90%;
+  }
+}
+
+/* Extra Small Mobile Phones (360px and below) */
+@media (max-width: 360px) {
+  
+  .Namemain {
+    font-size: 1.5em;
+    margin-bottom: 0.3rem;
+  }
+  
+  
+  .role-line {
+    font-size: 0.8rem;
+  }
+  
+  
+  .cursor {
+    height: 0.9rem;
+    width: 6px;
+  }
+  
+  
+  .homebutton .btn {
+    width: 65%;
+    max-width: 130px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  
+  #insideabout {
+    gap: 0.8rem;
+    padding-top: 10px;
+  }
+  
+  
+  #insideabout img {
+    width: 120px;
+  }
+  
+  
+  #insideabout p {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+  
+  
+  .outboxskill {
+    font-size: 12px;
+    gap: 1.5rem;
+  }
+  
+  
+  .inboxskill li {
+    padding: 0.4rem;
+    margin-bottom: 0.8rem;
+    font-size: 12px;
+  }
+  
+  
+  .h3about {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  
+  .gridboxes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+  
+  
+  .box {
+    width: 6.5em;
+    height: 6.5em;
+  }
+  
+  
+  .overlay-text h4 {
+    font-size: 0.65em;
+    line-height: 1.1;
+    padding: 0.2rem;
+  }
+  
+  
+  .certifications {
+    padding: 1rem 0.3rem;
+  }
+  
+  .aboutme, .skills {
+    padding: 0 0.3rem;
+  }
+}
+
+/* NEW BREAKPOINT: Very Small Screens (320px and below) */
+@media (max-width: 320px) {
+  
+  .Namemain {
+    font-size: 1.3em;
+    margin-bottom: 0.2rem;
+  }
+  
+  .role-line {
+    font-size: 0.7rem;
+  }
+  
+  .cursor {
+    height: 0.8rem;
+    width: 5px;
+  }
+  
+  .homebutton .btn {
+    width: 90%;
+    max-width: 120px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
+  }
+  
+  #insideabout img {
+    width: 100px;
+  }
+  
+  #insideabout p {
+    font-size: 11px;
+  }
+  
+  .inboxskill li {
+    padding: 0.3rem;
+    margin-bottom: 0.6rem;
+    font-size: 11px;
+  }
+  
+  .h3about {
+    font-size: 1.1rem;
+  }
+  
+  .outboxskill {
+    font-size: 11px;
+  }
+  
+  .box {
+    width: 5.5em;
+    height: 5.5em;
+  }
+  
+  .overlay-text h4 {
+    font-size: 0.55em;
+    padding: 0.1rem;
+  }
+}
+
+/* UPDATED: Landscape Mobile Orientation */
+@media (max-height: 500px) and (orientation: landscape) {
+  .home {
+    height: 100vh;
+    transform: none;
+    justify-content: center;
+  }
+  
+  
+  .Namemain {
+    font-size: 1.8em;
+  }
+  
+  
+  .role-line {
+    font-size: 0.9rem;
+  }
+  
+  
+  .homebutton {
+    margin-top: 0.5rem;
+  }
+  
+  
+  .homebutton .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
