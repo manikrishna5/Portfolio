@@ -66,7 +66,7 @@ cerids.forEach((ceritem,index)=>{
 });
 const banids = document.querySelectorAll(".banners .project-item");
 const banlinks = [
-    "Graphicdesign/Banners/Horizon_IT_Magazine_Final.pdf",
+    "Graphicdesign/Banners/Horizon_IT_Magazine_Final-compressed.pdf",
     "Graphicdesign/Banners/PRESENTS (37.671 x 72 in).png"
 ]
 banids.forEach((ceritem,index)=>{
