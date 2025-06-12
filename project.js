@@ -67,7 +67,12 @@ cerids.forEach((ceritem,index)=>{
 const banids = document.querySelectorAll(".banners .project-item");
 const banlinks = [
     "Graphicdesign/Banners/Horizon_IT_Magazine_Final-compressed.pdf",
-    "Graphicdesign/Banners/PRESENTS (37.671 x 72 in).png"
+    "Graphicdesign/Banners/PRESENTS (37.671 x 72 in).png",
+    "https://www.figma.com/design/6IIa32OnavfD58yhh8K4W7/Mobile_Project_bolt?node-id=0-1&t=fM3SGFWMyat2AUBu-1",
+    "https://www.figma.com/proto/3rHo4vbHAepNmwB6z0CkEJ/project_bolt?node-id=458-1271&t=JHw403yfvyqEakHW-1&scaling=scale-down&content-scaling=fixed&page-id=458%3A1269&starting-point-node-id=458%3A1271&show-proto-sidebar=1",
+    "https://www.figma.com/proto/QBLPc8V0RWLNZd4nRMM1zj/Untitled?node-id=188-270&p=f&t=VMeYOKWrBYhv3X24-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=188%3A270",
+    "https://www.figma.com/proto/maDDoq3d5q1fdD1iBeM0Cr/23311A12K2--C--Krishna-s-team-library?node-id=2329-72&p=f&t=n1kXvFtK4Kj47cPI-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+    "https://www.figma.com/proto/v2KikZMO5Xbm1nQN01Be0N/Hash-it-out-IDCARDS?node-id=2317-63&p=f&t=yPgaUa6RK9MFj3Np-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
 ]
 banids.forEach((ceritem,index)=>{
     ceritem.addEventListener("click",()=>{
