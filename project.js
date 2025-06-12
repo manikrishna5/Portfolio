@@ -1,15 +1,15 @@
 const ids = document.querySelectorAll(".posters .project-item");
 const posterlinks = [
-    "Graphicdesign/Posters/flyer.png",
-    "Graphicdesign/Posters/backend.png",
     "Graphicdesign/Posters/icegola.png",
+    "Graphicdesign/stories/Dasara SDC.jpg",
+    "Graphicdesign/Posters/backend.png",
+    "Graphicdesign/Posters/flyer.png",
     "Graphicdesign/Posters/hashitout_poster_FwQR.png",
     "Graphicdesign/Posters/SDC .jpg",
     "Graphicdesign/Posters/skylit.png",
     "Graphicdesign/invitations/skylit.png",
     "Graphicdesign/invitations/Invitation.jpg",
     "Graphicdesign/stories/shivarathri.jpg",
-    "Graphicdesign/stories/Dasara SDC.jpg",
     "Graphicdesign/stories/ramnavami.jpg",
     "Graphicdesign/stories/ugadi.jpg",
     "Graphicdesign/invitations/farewell invite.png"
